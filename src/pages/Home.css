@@ -1,0 +1,30 @@
+.items {
+  position: relative;
+
+
+}
+
+.actions {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  opacity: 0;
+  transition: 0.4s ease-in-out;
+  background-color: rgba(49, 49, 49, 0.5);
+  ;
+}
+
+.actions:hover {
+  opacity: 1;
+}
+
+.actions p {
+  text-align: justify;
+  color: white;
+}

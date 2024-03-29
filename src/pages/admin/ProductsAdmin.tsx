@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const ProductsAdmin = ({ products }) => {
+const ProductsAdmin = ({ products, onRemove }) => {
   return (
     <>
       <div className='d-flex justify-content-between align-items-center mb-2'>
@@ -33,7 +33,7 @@ const ProductsAdmin = ({ products }) => {
               <td>
                 <div className='d-flex justify-content-between align-items gap-2'>
                   <button className='btn btn-primary btn-sm'>Cập nhật</button>
-                  <button className='btn btn-danger btn-sm'>Xóa</button>
+                  <button className='btn btn-danger btn-sm' onClick={() => onRemove(product.id)}>Xóa</button>
                 </div>
               </td>
             </tr>

@@ -1,5 +1,4 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 const Header = () => {
   return (
@@ -8,11 +7,11 @@ const Header = () => {
         <div className='container'>
           <div className='links'>
             <ul className='d-flex justify-content-end gap-3 my-2'>
-              <li><Link to={'/'} className='link'>Trang chủ</Link></li>
-              <li><Link to={'products'} className='link'>Sản phâm</Link></li>
-              <li><Link to={'contact'} className='link'>Liên hệ</Link></li>
-              <li><Link to={'signin'} className='link'>Đăng nhập</Link></li>
-              <li><Link to={'signup'} className='link'>Đăng ký</Link></li>
+              <li><NavLink to={'/'} className='link'>Trang chủ</NavLink></li>
+              <li><NavLink to={'products'} className='link'>Sản phâm</NavLink></li>
+              <li><NavLink to={'contact'} className='link'>Liên hệ</NavLink></li>
+              <li><NavLink to={'signin'} className='link'>Đăng nhập</NavLink></li>
+              <li><NavLink to={'signup'} className='link'>Đăng ký</NavLink></li>
             </ul>
           </div>
         </div>
@@ -25,8 +24,8 @@ const Header = () => {
             </div>
 
             <div className='form-header '>
-              <form className="col-12 col-lg-auto mb-2 mb-lg-0 me-lg-auto" role="search">
-                <input type="search" className="form-control" placeholder="Search..." aria-label="Search" />
+              <form className='col-12 col-lg-auto mb-2 mb-lg-0 me-lg-auto' role='search'>
+                <input type='search' className='form-control' placeholder='Search...' aria-label='Search' />
               </form>
             </div>
           </div>
